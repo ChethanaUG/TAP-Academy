@@ -4,19 +4,19 @@ This repository contains my HTML, CSS, and basic web development practice projec
 
 ## Projects Included
 
-1. Portfolio Website  
-   A simple personal portfolio showcasing my skills, projects, and contact information.
-
-2. Multimedia Webpage  
+1. Multimedia Webpage  
    A webpage featuring my favorite songs, movies, and embedded media.
 
-3. Life & Skills Portfolio  
+2. Life & Skills Portfolio Website  
    A structured page highlighting my achievements, skills, and goals.
+   
+4. Portfolio  
+   A simple personal portfolio showcasing my skills, projects, and contact information.
 
-4. Weekly Time Table  
+5. Weekly Time Table  
    A styled timetable using HTML tables.
 
-5. Course Registration Form  
+6. Course Registration Form  
    A dark-mode styled form with multiple input fields and validation.
 
 ## Technologies Used
