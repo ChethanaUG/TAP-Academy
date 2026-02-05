@@ -25,6 +25,5 @@ This repository contains my HTML, CSS, and basic web development practice projec
 
 ## Author
 **Chethana UG**  
-Aspiring Full-Stack Developer  
 
 GitHub: https://github.com/ChethanaUG
