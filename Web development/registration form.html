@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Registration Form</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+      /* Matte green + matte pink gradient */
+      background: linear-gradient(135deg, #a8c5a1, #e7b7c8);
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 30px;
+      color: #2f3e34;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    /* Dark mode form */
+    form {
+      background: #1e1e1e;
+      color: #e4e4e4;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    fieldset {
+      border: 1px solid #444;
+      margin-bottom: 15px;
+    }
+
+    legend {
+      color: #d6a3b5;
+      font-weight: bold;
+    }
+
+    table {
+      margin: auto;
+    }
+
+    label {
+      color: #cccccc;
+    }
+
+    input,
+    select,
+    textarea {
+      background: #2a2a2a;
+      color: #ffffff;
+      border: 1px solid #555;
+      border-radius: 4px;
+      padding: 6px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaaaaa;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 15px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      background: #7fa88c;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="reset"] {
+      background: #c88fa1;
+    }
+
+    input[type="submit"]:hover {
+      background: #6b9577;
+    }
+
+    input[type="reset"]:hover {
+      background: #b7798e;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Course Registration Form</h1>
+
+  <div class="form-container">
+    <form>
+      <!-- Personal Details -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="Ex: Chethana"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Surname</label></td>
+            <td>
+              <input
+                type="text"
+                name="surname"
+                placeholder="UG"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                name="mobile"
+                placeholder="Ex: 1234567890"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="chethana@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="min 5 characters"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="confirm_password"
+                placeholder="min 5 characters"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>DOB</label></td>
+            <td><input type="date" name="dob" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Age</label></td>
+            <td>
+              <input type="number" name="age" min="18" max="100" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="male" /> Male
+              <input type="radio" name="gender" value="female" /> Female
+              <input type="radio" name="gender" value="other" /> Other
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Upload Picture</label></td>
+            <td><input type="file" name="picture" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Course Details -->
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label>Select Course</label></td>
+            <td>
+              <select name="course">
+                <option>Java Full Stack</option>
+                <option>DSA</option>
+                <option>AI</option>
+                <option>Data Science</option>
+                <option>Cyber Security</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Delivery Mode</label></td>
+            <td>
+              <input type="checkbox" name="delivery_mode" value="online" /> Online
+              <input type="checkbox" name="delivery_mode" value="offline" /> Offline
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Institute Name</label></td>
+            <td>
+              <input type="text" value="TAP ACADEMY" readonly />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Coding Knowledge Level</label></td>
+            <td>
+              <input type="range" min="0" max="100" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Comments</label></td>
+            <td>
+              <textarea rows="5" cols="30"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Buttons -->
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </div>
+</body>
+</html>
 
